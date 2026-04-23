@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureGate - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="display: flex; min-height: 100vh; align-items: center; justify-content: center; padding: 0 8%;">
+
+    <div style="display: flex; width: 100%; max-width: 1100px; gap: 60px; align-items: center;">
+        
+        <div style="flex: 1; display: none; display: block;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 40px;">
+                <img src="images/logo.png" height="30" onerror="this.style.display='none'">
+                <span style="font-weight: bold; font-size: 20px;">FutureGate</span>
+            </div>
+            <h1 style="font-size: 48px; margin: 0; line-height: 1.2;">Welcome Back!</h1>
+            <p style="color: var(--text-gray); font-size: 18px; margin: 20px 0 40px;">
+                Login to your account and continue <br>your journey with us.
+            </p>
+            <img src="images/cooding.jpg" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+        </div>
+
+        <div class="card" style="flex: 0.8; max-width: 420px; padding: 40px;">
+            <h2 style="margin: 0 0 10px 0; font-size: 28px;">Login</h2>
+            <p style="color: var(--text-gray); font-size: 14px; margin-bottom: 30px;">
+                Don't have an account? <a href="#" style="color: var(--primary-purple); text-decoration: none;">Sign up</a>
+            </p>
+
+            <form>
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-size: 13px; color: var(--text-gray); margin-bottom: 8px;">Email Address</label>
+                    <input type="email" placeholder="Enter your email" 
+                           style="width: 100%; padding: 12px; background: #050509; border: 1px solid var(--border-color); border-radius: 10px; color: white; outline: none; box-sizing: border-box;">
+                </div>
+
+                <div style="margin-bottom: 20px; position: relative;">
+                    <label style="display: block; font-size: 13px; color: var(--text-gray); margin-bottom: 8px;">Password</label>
+                    <input type="password" placeholder="Enter your password" 
+                           style="width: 100%; padding: 12px; background: #050509; border: 1px solid var(--border-color); border-radius: 10px; color: white; outline: none; box-sizing: border-box;">
+                    <i class="far fa-eye" style="position: absolute; right: 15px; top: 40px; color: var(--text-gray); cursor: pointer;"></i>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 30px;">
+                    <label style="display: flex; align-items: center; gap: 5px; cursor: pointer; color: var(--text-gray);">
+                        <input type="checkbox" style="accent-color: var(--primary-purple);"> Remember me
+                    </label>
+                    <a href="#" style="color: var(--primary-purple); text-decoration: none;">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-btn" style="width: 100%; border: none; padding: 14px; cursor: pointer; font-size: 16px;">
+                    Login
+                </button>
+            </form>
+
+            <div style="text-align: center; margin: 30px 0; position: relative;">
+                <span style="background: var(--card-bg); padding: 0 10px; color: var(--text-gray); font-size: 12px; position: relative; z-index: 1;">or continue with</span>
+                <hr style="position: absolute; top: 50%; width: 100%; border: 0; border-top: 1px solid var(--border-color); margin: 0;">
+            </div>
+
+            <div style="display: flex; gap: 15px; justify-content: center;">
+                <div style="width: 50px; height: 50px; border: 1px solid var(--border-color); border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <img src="images/google.png" width="20" onerror="this.style.display='none'">
+                </div>
+                <div style="width: 50px; height: 50px; border: 1px solid var(--border-color); border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <img src="images/linkedin.png" width="20" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

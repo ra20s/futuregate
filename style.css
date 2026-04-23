@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-purple: #6c5ce7;
+    --dark-bg: #050509;
+    --card-bg: #0d0d17;
+    --border-color: #1e1e2e;
+    --text-gray: #94a3b8;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar - الهيدر العلوي */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: rgba(5, 5, 9, 0.95);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: var(--primary-purple);
+}
+
+.login-btn {
+    background: var(--primary-purple);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Grid Layout - توزيع الكروت */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 8%;
+}
+
+/* Card Style - شكل الكرت الموحد */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--primary-purple);
+}
+
+/* Buttons - الأزرار */
+.view-btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: var(--primary-purple);
+}

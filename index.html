@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureGate - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="background-color: #05050a; color: white; margin: 0;">
+
+    <nav style="position: sticky; top: 0; z-index: 1000; background: rgba(5, 5, 10, 0.8); backdrop-filter: blur(10px);">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" height="30" onerror="this.style.display='none'">
+            <span style="font-weight: bold; font-size: 20px; margin-left: 10px;">FutureGate</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="companies.html">Companies</a>
+            <a href="internship.html">Internships</a>
+            <a href="team.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <section class="hero" style="
+        background: linear-gradient(rgba(5, 5, 10, 0.5), rgba(5, 5, 10, 0.8)), url('images/home-bg.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed;
+        padding: 150px 8% 120px; 
+        text-align: left;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;">
+        <h1 style="font-size: 56px; margin-bottom: 20px; line-height: 1.2;">Your Future <br><span style="color: var(--primary-purple);">Starts Here</span></h1>
+        <p style="color: var(--text-gray); font-size: 18px; max-width: 500px; margin-bottom: 40px; line-height: 1.6;">
+            Explore the best internship opportunities, connect with top companies and build your career.
+        </p>
+        <div style="display: flex; gap: 20px;">
+            <a href="internship.html" class="cta-button" style="background: var(--primary-purple); color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; font-weight: bold;">Explore Opportunities →</a>
+            <a href="companies.html" style="color: white; text-decoration: none; border: 1px solid var(--border-color); padding: 15px 30px; border-radius: 10px; font-weight: bold;">View Companies →</a>
+        </div>
+    </section>
+
+    <div style="display: flex; justify-content: space-around; background: rgba(10, 10, 21, 0.9); backdrop-filter: blur(10px); border: 1px solid var(--border-color); margin: -50px 8% 60px; padding: 30px; border-radius: 20px; position: relative; z-index: 10;">
+        <div style="text-align: center;">
+            <h2 style="font-size: 28px; margin-bottom: 5px;"><i class="far fa-envelope" style="color: var(--primary-purple); margin-right: 10px;"></i> 250+</h2>
+            <p style="color: var(--text-gray); font-size: 13px;">Internships</p>
+        </div>
+        <div style="text-align: center;">
+            <h2 style="font-size: 28px; margin-bottom: 5px;"><i class="fas fa-city" style="color: var(--primary-purple); margin-right: 10px;"></i> 120+</h2>
+            <p style="color: var(--text-gray); font-size: 13px;">Companies</p>
+        </div>
+        <div style="text-align: center;">
+            <h2 style="font-size: 28px; margin-bottom: 5px;"><i class="fas fa-users" style="color: var(--primary-purple); margin-right: 10px;"></i> 5K+</h2>
+            <p style="color: var(--text-gray); font-size: 13px;">Students</p>
+        </div>
+        <div style="text-align: center;">
+            <h2 style="font-size: 28px; margin-bottom: 5px;"><i class="fas fa-smile" style="color: var(--primary-purple); margin-right: 10px;"></i> 98%</h2>
+            <p style="color: var(--text-gray); font-size: 13px;">Satisfaction Rate</p>
+        </div>
+    </div>
+
+    <section style="padding: 0 8% 60px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <h2 style="font-size: 24px;">Featured Internships</h2>
+            <a href="internship.html" style="color: var(--primary-purple); text-decoration: none; font-size: 14px;">View All →</a>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <span class="tag" style="background: rgba(79, 70, 229, 0.2); color: #818cf8; padding: 4px 12px; border-radius: 20px; font-size: 12px;">New</span>
+                <div style="margin: 20px 0;"><img src="images/stc-logo.png" height="40"></div>
+                <h3>Frontend Developer Intern</h3>
+                <p style="color: var(--text-gray); font-size: 13px;">STC</p>
+                <div style="display: flex; gap: 15px; margin-top: 15px; color: var(--text-gray); font-size: 12px;">
+                    <span><i class="fas fa-map-marker-alt"></i> Riyadh</span>
+                    <span><i class="far fa-clock"></i> 3 Months</span>
+                </div>
+                <a href="internship.html" class="view-btn">View Details →</a>
+            </div>
+            <div class="card">
+                <span class="tag" style="background: rgba(79, 70, 229, 0.2); color: #818cf8; padding: 4px 12px; border-radius: 20px; font-size: 12px;">New</span>
+                <div style="margin: 20px 0;"><img src="images/aramco-logo.png" height="40"></div>
+                <h3>Software Engineering Intern</h3>
+                <p style="color: var(--text-gray); font-size: 13px;">Aramco</p>
+                <div style="display: flex; gap: 15px; margin-top: 15px; color: var(--text-gray); font-size: 12px;">
+                    <span><i class="fas fa-map-marker-alt"></i> Dhahran</span>
+                    <span><i class="far fa-clock"></i> 6 Months</span>
+                </div>
+                <a href="internship.html" class="view-btn">View Details →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="
+        background: linear-gradient(rgba(10, 10, 18, 0.9), rgba(10, 10, 18, 0.9)), url('images/home-bg.png'); 
+        background-size: cover; 
+        border-top: 1px solid var(--border-color); 
+        padding: 80px 8% 20px;">
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+            <div>
+                <div class="logo" style="margin-bottom: 20px;">
+                    <img src="images/logo.png" height="25" onerror="this.style.display='none'">
+                    <span style="font-weight: bold; font-size: 18px; margin-left: 8px;">FutureGate</span>
+                </div>
+                <p style="color: var(--text-gray); font-size: 14px; line-height: 1.6;">Empowering students to discover, connect and grow through the best internship opportunities.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px; font-size: 15px;">Quick Links</h4>
+                <ul style="list-style: none; padding: 0; font-size: 13px; line-height: 2.5;">
+                    <li><a href="index.html" style="color: var(--text-gray); text-decoration: none;">Home</a></li>
+                    <li><a href="companies.html" style="color: var(--text-gray); text-decoration: none;">Companies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px; font-size: 15px;">Follow Us</h4>
+                <div style="display: flex; gap: 15px; font-size: 20px; color: var(--text-gray);">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #1e1e2e; padding-top: 20px; color: var(--text-gray); font-size: 12px;">
+            ©️ 2026 FutureGate. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
